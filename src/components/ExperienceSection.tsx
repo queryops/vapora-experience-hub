@@ -1,5 +1,4 @@
 import { Truck, Clock, MessageCircle, ShieldCheck } from "lucide-react";
-import mascotSilhouette from "@/assets/mascot-silhouette.png";
 
 const features = [
   {
@@ -44,18 +43,8 @@ const testimonials = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experiencia" className="relative py-20 md:py-32 px-6 overflow-hidden">
-      {/* Background Mascot Silhouette */}
-      <div className="absolute -right-10 bottom-0 pointer-events-none opacity-[0.12] hidden lg:block">
-        <img
-          src={mascotSilhouette}
-          alt=""
-          className="w-[400px]"
-          aria-hidden="true"
-        />
-      </div>
-
-      <div className="container mx-auto max-w-7xl relative z-10">
+    <section id="experiencia" className="py-20 md:py-32 px-6">
+      <div className="container mx-auto max-w-7xl">
         {/* Features Grid */}
         <div className="text-center mb-16">
           <span className="text-xs font-mono text-primary tracking-[0.3em] uppercase">

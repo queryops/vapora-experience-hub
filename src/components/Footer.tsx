@@ -1,21 +1,9 @@
-import mascotFloat from "@/assets/mascot-float.png";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contacto" className="relative border-t border-border py-16 px-6 overflow-hidden">
-      {/* Mascot in Footer */}
-      <div className="absolute right-4 md:right-12 -bottom-4 pointer-events-none opacity-[0.08] hidden sm:block">
-        <img
-          src={mascotFloat}
-          alt=""
-          className="w-[200px] md:w-[280px]"
-          aria-hidden="true"
-        />
-      </div>
-
-      <div className="container mx-auto max-w-7xl relative z-10">
+    <footer id="contacto" className="border-t border-border py-16 px-6">
+      <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">

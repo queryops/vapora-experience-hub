@@ -1,5 +1,4 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import mascotHero from "@/assets/mascot-hero.png";
 
 const HeroSection = () => {
   return (
@@ -36,16 +35,6 @@ const HeroSection = () => {
             }}
           />
         ))}
-      </div>
-
-      {/* Mascot - Right Side */}
-      <div className="absolute right-0 bottom-0 z-[5] pointer-events-none hidden md:block">
-        <img
-          src={mascotHero}
-          alt="VAPORA Mascot - El Greench"
-          className="w-[280px] lg:w-[360px] xl:w-[420px] opacity-80 animate-float drop-shadow-[0_0_30px_hsla(150,100%,50%,0.3)]"
-          style={{ animationDuration: "8s" }}
-        />
       </div>
 
       {/* Content */}
