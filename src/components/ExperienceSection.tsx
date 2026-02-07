@@ -43,7 +43,7 @@ const testimonials = [
 
 const ExperienceSection = () => {
   return (
-    <section className="py-20 md:py-32 px-6">
+    <section id="experiencia" className="py-20 md:py-32 px-6">
       <div className="container mx-auto max-w-7xl">
         {/* Features Grid */}
         <div className="text-center mb-16">
