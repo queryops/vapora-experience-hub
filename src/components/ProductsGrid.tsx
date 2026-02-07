@@ -4,6 +4,7 @@ import productHaze from "@/assets/product-haze.png";
 import productHalfBakd from "@/assets/product-half-bakd.png";
 import productCapsulas from "@/assets/product-capsulas-runtz.png";
 import productBateria from "@/assets/product-bateria-brass.png";
+import mascotFloat from "@/assets/mascot-float.png";
 
 interface Product {
   id: string;
@@ -123,8 +124,18 @@ const ProductCard = ({ product, featured = false }: { product: Product; featured
 
 const ProductsGrid = () => {
   return (
-    <section id="productos" className="py-20 md:py-32 px-6">
-      <div className="container mx-auto max-w-7xl">
+    <section id="productos" className="relative py-20 md:py-32 px-6 overflow-hidden">
+      {/* Background Mascot Watermark */}
+      <div className="absolute -left-20 top-1/2 -translate-y-1/2 pointer-events-none opacity-[0.06] hidden lg:block">
+        <img
+          src={mascotFloat}
+          alt=""
+          className="w-[500px] rotate-[-15deg]"
+          aria-hidden="true"
+        />
+      </div>
+
+      <div className="container mx-auto max-w-7xl relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-xs font-mono text-primary tracking-[0.3em] uppercase">
