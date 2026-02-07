@@ -32,7 +32,7 @@ const Footer = () => {
               Navegación
             </h4>
             <ul className="space-y-3">
-              {["Inicio", "Productos", "Catálogo", "Paquetes", "Contacto"].map((link) => (
+              {["Inicio", "Productos", "Galería", "Experiencia", "Contacto"].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
